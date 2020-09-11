@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+h1{color:#9999ff;}h2{color:#667a3d;}h3{color:#ffa600;}
+p {color:#850024;
+  font-family:vernada;
+  font-size:110%;
+}
+body {background-color:#deffde;}
+</style>
+</head>
+<body>
+
+<h1>Дмитренко Іван</h1>
+<h2>КН-МА 18к</h2>
+<h3>https://github.com/Ivan020703/dmi.git</h3>
+
+
+<p>Exercises were completed?</p>
+<input type="radio" id="yes" name="task" value="Yes">
+<label for="yes">Yes</label><br>
+<input type="radio" id="no" name="task" value="No">
+<label for="no">No</label>
+
+<p>How many exercises I did?</p>
+<input type="checkbox" id="task1" name="task1" value="1">
+<label for="task1">The First</label><br>
+<input type="checkbox" id="task2" name="task1" value="2 and 3">
+<label for="task2">Second and Third</label><br>
+<input type="checkbox" id="task3" name="task1" value="anything">
+<label for="task2">I didn't do anything</label><br>
+<input type="checkbox" id="task4" name="task1" value="4 and 5">
+<label for="task2">Fourth and Fifth</label><br>
+
+<p>Exercise with textarea</p>
+<textarea id="text" name="text" rows="6" cols="50" value="name">
+The for attribute of (label) must be equal to the id attribute of the related element to bind them together. A label can also be bound to an element by placing the element inside the (label) element.
+</textarea>
+
+</body>
+</html>

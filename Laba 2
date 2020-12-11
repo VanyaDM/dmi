@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Laba 2</title>
+ </head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class= "container">
+      <div class= "header__inner">
+        <div class= "header__logo">
+          <img src="img/activebox-logo.png" alt="">
+        </div>
+        <nav class="nav">
+          <a class="nav__link" href="#">Features</a>
+          <a class="nav__link" href="#">Works</a>
+          <a class="nav__link" href="#">Our Team</a>
+          <a class="nav__link" href="#">Testimonials</a>
+          <a class="nav__link" href="#">Download</a>
+        </nav>
+      </div>
+    </div>
+</header>
+
+<!--Intro-->
+<div class="intro">
+  <div class="container">
+    <div class="intro__inner">
+    </div>
+    <h1 class="intro__title">This website was written by Dmytrenko Ivan</h1>
+    <h2 class="intro__subtitle">«A dream doesn’t become reality through magic; it takes sweat, determination, and hard work»</h2>
+    <a class="btn btn--red" href="#">Find Out More</a>
+
+
+    </div>
+  </div>
+</div>
+
+<!--Table-->
+
+<form>
+<div class="main inline">
+    <div class="left-block" >Title 1<br>
+    <input type="radio" name="rd" value="Radio Button" id="Choise 1">
+    <label for="Choise 1">Radio Button</label><br>
+    <input type="radio" name="rd" value="Radio Button2" id="Choise 2">
+    <label for="Choise 2">Radio Button</label><br>
+      <a class="btn1 btn1--white" htef="#">BUTTON</a>
+
+</div>
+
+      <div class="content" >Title 2<br>
+      <textarea name="tx" rows="20" cols="50" style="margin: 0px; height: 193px; width: 294px;">Textarea</textarea>"
+
+</div>
+        <div class="right-block" >Title 3<br>
+    <input type="checkbox" name="cb" value="CheckBox" id="Check 1">
+    <label for="Check 1">CheckBox</label><br>
+    <input type="checkbox" name="cb" value="CheckBox2" id="Check 2">
+    <label for="Check 2">CheckBox</label><br>
+    <input type="checkbox" name="cb" value="CheckBox3" id="Check 3">
+    <label for="Check 3">CheckBox</label><br>
+    <input type="submit" name="sub" value="Submit" style="mardin : 0px; height: 25px; width: 140px;">
+
+</div>
+
+</div>
+</body>
+</html
+
+
+
+
+
+
+CSS
+
+
+body {
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    background-color: #fff;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+  margin: 0;
+}
+p{
+  margin: 0 0 10px;
+}
+
+/* Container
+===================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Header
+===================*/
+
+.header {
+  width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+
+    border-bottom: 1px solid #515369;
+}
+
+/* Nav
+===================*/
+
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 50px;
+
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/* Intro
+===================*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 100px;
+
+    background: #31344e url("img/Untitled.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0;
+
+
+}
+
+.intro__title {
+    margin: 0 0 30px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+
+
+}
+
+/* Button
+===================*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+.btn--red:hover {
+    background-color: #dd3434;
+}
+
+
+/*Block
+=================*/
+.main {
+        margin:0 auto; /* Центрируем блоки */
+        width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
+         /* Устанавливаем максимальную ширину */
+    }
+    .inline div {
+        display:inline-block; /* Делаем блоки по горизонтали */
+        display: -moz-inline-stack; /* Для FireFox 2, тот же самый, что и inline-block */
+        vertical-align:top; /* Выравниваем их сверху */
+        font-size:16px; /* Ставим дочкам размер шрифта, иначе примет значение родителя */
+        /* Для IE 6 и IE 7, чтобы блоки были по горизонтали
+        zoom: 1;
+        *display: inline;
+        */
+    }
+    div.inline {font-size:0;} /* Ставим родителю значение 0, чтобы убрать отступы у блоков*/
+    .left-block {
+
+       font-family: 'Open Sans', sans-serif;
+        background:fff;
+        width:33.33333%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
+        height:300px; /* Высота блока */
+        font-size: 40px;
+        color: #6c7279;
+        text-align: center;
+        padding: 60px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        border: 1px solid black;
+
+        margin: 0px;
+
+
+
+
+    }
+
+.btn1 {
+
+  display: inline-block;
+  vertical-align: top;
+  padding: 14px 40px;
+
+  border-radius: 6px;
+  border: 1px solid black;
+  cursor: pointer;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: background .1s linear;
+}
+
+.btn1--white {
+  background-color: #fff;
+}
+
+.btn1--white:hover {
+  background-color: #fff;
+}
+
+
+
+    .content {
+      font-family: 'Open Sans', sans-serif;
+
+        background:fff;
+        width:33.33333%;
+        height:300px;
+        text-align: center;
+        color: #6c7279;
+        padding: 60px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        border: 1px solid black;
+
+        margin: 0px;
+    }
+    .right-block {
+      font-family: 'Open Sans', sans-serif;
+        background:fff;
+        width:33.33333%;
+        height:300px;
+        font-size: 40px;
+        color: #6c7279;
+        text-align: center;
+        padding: 60px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        border: 1px solid black;
+
+        margin: 0px;
+
+    }
+
+
